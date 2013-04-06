@@ -9,5 +9,11 @@ body {
 	background-position: center top;
 	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/assets/bg1.JPG", sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/bg1.JPG', sizingMethod='scale')";
+	
+	filter: Shadow(Color=#666666, Direction=45, Strength=4);
+	text-shadow: 1px 1px 2px darkslategrey, 0 0 1px -moz-default-background-color;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
 }	
 
