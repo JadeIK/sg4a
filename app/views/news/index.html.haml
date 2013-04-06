@@ -4,7 +4,6 @@
   %tr
     %th Title
     %th Description
-    %th User
     %th
     %th
     %th
@@ -13,11 +12,10 @@
     %tr
       %td= news.title
       %td= news.description
-      %td= news.user_id
       %td= link_to 'Show', news
-      %td= link_to 'Edit', edit_news_path(news)
-      %td= link_to 'Destroy', news, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
+      - if can? :read, news 
+        %td= link_to 'Edit', edit_news_path(news)
+        %td= link_to 'Destroy', news, :method => :delete, :data => { :confirm => 'Are you sure?' }
 %br
-
-= link_to 'New News', new_news_path
+- if can? :create, Post
+  = link_to 'New News', new_news_path

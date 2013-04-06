@@ -3,7 +3,7 @@ class WelcomesController < ApplicationController
 
   # GET /welcomes
   def index
-   
+  
   end
 
 end

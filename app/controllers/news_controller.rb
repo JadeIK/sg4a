@@ -1,4 +1,5 @@
 class NewsController < ApplicationController
+  load_and_authorize_resource
   before_action :set_news, only: [:show, :edit, :update, :destroy]
 
   # GET /news

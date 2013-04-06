@@ -1,82 +1,11 @@
+@import 'mobile';
+
 body {
-	margin: 0px;
-	padding: 0px;
-	background-color: ghostwhite;
+	background: #89eef5;
+	background-image: url("/assets/bg1.png"), url("/assets/bg2.png");
+	background-repeat: repeat-x, repeat;
+	background-attachment: fixed;
 
-}
+	
+}	
 
-#header {
-	width: 100%;
-	height: 40px;
-	background: white;
-	float: left;
-	/*border: 1px solid orange;*/
-	border-bottom: 3px solid orange; 
-	.logo {
-		width: auto;
-		float: left;
-		height: 40px;
-		line-height: 38px;
-		font-size: 32px;
-		color: darkorange;
-		font-family: 'Vernanda' arial;
-		margin-left: 2%;
-		font-weight: bold;
-		text-shadow: 1px 1px InfoBackground, -1px -1px #727272
-	}
-	.grettengs {
-		width: auto;
-		float: right;
-		height: 40px;
-		line-height: 38px;
-		font-size: 18px;
-		color: darkorange;
-		font-family: 'Vernanda' arial;
-		margin-right: 2%;
-		font-weight: bold;
-		text-shadow: 1px 1px MenuText, -1px -1px #727272
-	}
-	.nav {
-		display: none;
-		form {
-			float: right;
-			width: 332px;
-			margin: 7px;
-			input[type=text],
-			input[type=password]
-			 {
-				width: 80px;
-				float: left;
-				margin-left: 5px;
-			}
-		}
-	}
-}
-
-#main {
-	width: 100%;
-	float: left;
-	.side-nav {
-		float: left;
-		width: 250px;
-		padding: 10px;
-		/*border-right: 1px solid orange;*/
-		color: darkcyan;
-	    font-family: sans-serif;
-	    font-size: 16px;
-	}
-	.content {
-	    color: darkcyan;
-	    float: left;
-	    font-family: sans-serif;
-	    font-size: 16px;
-	    margin: 10px;
-	    width: 70%;
-	    /*text-shadow: 1px 1px threedhighlight, -1px -1px #000000;*/
-	}
-}
-
-#footer {
-	width: 100%;
-	float: left;
-}

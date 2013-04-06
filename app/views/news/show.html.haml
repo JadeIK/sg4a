@@ -3,21 +3,10 @@
 %p
   %b Title:
   = @news.title
-%p
-  %b String,:
-  = @news.string,
+
 %p
   %b Content:
-  = @news.content
-%p
-  %b String,:
-  = @news.string,
-%p
-  %b User:
-  = @news.user_id
-%p
-  %b Integer:
-  = @news.integer
+  = @news.description
 
 = link_to 'Edit', edit_news_path(@news)
 \|

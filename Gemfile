@@ -8,6 +8,9 @@ gem "haml-rails", ">= 0.4"
 gem "html2haml", ">= 1.0.1", :group => :development
 gem 'bourbon'
 gem 'compass'
+gem 'devise'
+gem 'cancan'
+gem 'protected_attributes'
 
 
 # Gems used only for assets and not required
@@ -41,3 +44,8 @@ gem 'jbuilder', '~> 1.0.1'
 
 # To use debugger
 # gem 'debugger'
+
+group :development do
+	gem 'better_errors'
+	gem 'binding_of_caller'
+end
